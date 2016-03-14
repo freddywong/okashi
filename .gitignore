@@ -11,3 +11,10 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore rvm files
+.ruby-version
+.ruby-gemset
+
+# Ignore database.yml as the environment can be set up differently on different local computers.
+/config/database.yml
