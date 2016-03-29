@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+snacks = Snack.create([{
+    name: 'Pocky',
+    description: "The original Pocky! Introduced in 1966 as 
+    'the world's first chocolate stick snack,' 
+    Pocky Chocolate is a tasty, crispy cookie biscuit stick 
+    dipped in rich, dark chocolate cream with a unique 'handle.' 
+    Delicious alone or with coffee, tea, milk, or wine, 
+    Pocky Chocolate is the perfect every-day, 
+    all-occasion chocolate snack.",
+    code: 12312
+  }])
