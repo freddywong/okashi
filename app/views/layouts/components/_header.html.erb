@@ -5,8 +5,10 @@
     <li><a href="#!">Second Sidebar Link</a></li>
   </ul>
   <ul id="slide-out" class="side-nav">
-    <li><a href="#!">First Sidebar Link</a></li>
-    <li><a href="#!">Second Sidebar Link</a></li>
+    <li><%= link_to 'All Snacks', root_url %></li>
+    <li><%= link_to 'Chocolates', root_url(category: 'chocolates') %></li>
+    <li><%= link_to 'Biscuits', root_url(category: 'biscuits') %></li>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+  
+  <%= link_to ("<i class='mdi-navigation-menu'></i>").html_safe, "#", "data-activates" => "slide-out", class:"button-collapse show-on-large category-menu" %>
 </nav>
