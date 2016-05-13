@@ -1,5 +1,6 @@
 <div class="container">
-  <div class="row">
+  <div class="row snacks">
     <%= render partial: "snack", collection: @snacks %>
   </div>
+  <%= will_paginate @snacks %>
 </div>
