@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "snacks#index"
+
+  namespace :shared do
+    namespace :components do
+      get 'big_colorful_circle_loader'
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

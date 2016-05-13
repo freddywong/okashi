@@ -4,4 +4,5 @@ $('.snacks').append('<%= escape_javascript render(partial: "snack", collection: 
 <% else %>
   $(window).off('scroll');
   $('.pagination').remove();
+  $('.big-colorful-circle-loader').remove();
 <% end %>
