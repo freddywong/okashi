@@ -17,6 +17,7 @@
       Delicious alone or with coffee, tea, milk, or wine, 
       Pocky Chocolate is the perfect every-day, 
       all-occasion chocolate snack.",
+      category: 'Biscuit',
       code: 12312
     },
     {
@@ -25,6 +26,7 @@
       chocolate, vanilla and strawberry créme. 
       Each cookie contains a drawing of the cute Hello Panda 
       enjoying various sports and boating. Look for all 24 drawings.",
+      category: 'Chocolate',
       code: 12313
     },
     {
@@ -32,6 +34,7 @@
       description: "The savory, creamless version of Pocky, Pretz 
       are also made by Glico, presumably in the exact same 
       long-skinny-cylindrical biscuit factory.",
+      category: 'Biscuit',
       code: 12314
     },
     {
@@ -39,6 +42,7 @@
       description: "A great chewing gum with a strong, minty flavor 
       that's designed to give you a lift and wake you up, this 
       popular gum is loaded with caffeine. ",
+      category: 'Gum',
       code: 12315
     }
 
