@@ -1,5 +1,5 @@
 <nav>
-  <a href="#" class="brand-logo center">Logo</a>
+  <%= link_to 'Okashi', root_url, class: "brand-logo center" %>
   <ul class="right hide-on-med-and-down">
     <li><a href="#!">First Sidebar Link</a></li>
     <li><a href="#!">Second Sidebar Link</a></li>
@@ -10,5 +10,9 @@
     <li><%= link_to 'Biscuits', snacks_url(category: "biscuits", snack_change:"true") %></li>
   </ul>
   
-  <%= link_to ("<i class='mdi-navigation-menu'></i>").html_safe, "#!", "data-activates" => "slide-out", class:"button-collapse show-on-large category-menu" %>
+  <div class="row">
+    <div class="col s1">
+      <%= link_to ("<i class='fa fa-heart-o' aria-hidden='true'></i>").html_safe, "#!", "data-activates" => "slide-out", class:"button-collapse show-on-large category-menu " %>
+    </div>
+  </div>
 </nav>
