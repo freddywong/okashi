@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "snacks#index"
 
+  resources :snacks
+
   namespace :shared do
     namespace :components do
       get 'big_colorful_circle_loader'
