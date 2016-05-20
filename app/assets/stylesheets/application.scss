@@ -1,10 +1,12 @@
 // Libraries
 @import "materialize";
 @import "materialize/extras/nouislider";
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300|Fredoka+One);
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Custom
 @import "shared/components";
 @import "shared/header";
+@import "shared/padding";
+@import "global";
