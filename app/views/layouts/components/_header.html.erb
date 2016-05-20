@@ -2,7 +2,7 @@
   <%= link_to 'Okashi', root_url, class: "brand-logo center" %>
   <ul class="right hide-on-med-and-down">
     <li><a href="#!">First Sidebar Link</a></li>
-    <li><a href="#!">Second Sidebar Link</a></li>
+    <li><%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %></li>
   </ul>
   <ul id="slide-out" class="side-nav">
     <li><%= link_to 'All Snacks', root_url %></li>
