@@ -1,0 +1,32 @@
+<div class="row padding-top-50">
+  <div class="col s6 offset-s3">
+    <h3 class="center">New Snack</h3>
+    <%= form_for @snack, url: { action: "create" } do |f| %>
+      <div class="input-field field">
+        <%= f.text_field :name, autofocus: true, class: "validate" %>
+        <%= f.label :name %><br />
+      </div>
+
+      <div class="input-field field">
+        <%= f.text_field :code, class: "validate" %>
+        <%= f.label :code %><br />
+      </div>
+
+      <div class="input-field field">
+        <%= f.text_field :category, class: "validate" %>
+        <%= f.label :category %><br />
+      </div>
+
+      <div class="input-field field">
+        <%= f.text_area :description, class: "validate materialize-textarea" %>
+        <%= f.label :description %><br />
+      </div>
+
+      <br/>
+      <div class="actions center">
+        <%= f.submit "Create Snack", class: 'waves-effect waves-light btn-large' %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
