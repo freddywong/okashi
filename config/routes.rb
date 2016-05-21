@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   resources :snacks
 
+  namespace :admin do
+    resources :snacks
+  end
+
   namespace :shared do
     namespace :components do
       get 'big_colorful_circle_loader'
