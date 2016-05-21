@@ -5,7 +5,7 @@ $(function() {
       
       if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
         
-        $('.pagination').hide();
+        $('.pagination').empty();
         $('.big-colorful-circle-loader').show();
 
         return $.getScript(url);
