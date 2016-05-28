@@ -4,9 +4,11 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300|Fredoka+One);
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "vendor/normalize";
 
 // Custom
 @import "shared/components";
 @import "shared/header";
 @import "shared/padding";
+@import "snacks";
 @import "global";
