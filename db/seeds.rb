@@ -18,7 +18,8 @@
       Pocky Chocolate is the perfect every-day, 
       all-occasion chocolate snack.",
       category: 'biscuits',
-      code: 12312
+      code: 12312,
+      picture: File.open('app/assets/images/seeds/pocky.jpg')
     },
     {
       name: 'Hello Panda',
@@ -27,7 +28,8 @@
       Each cookie contains a drawing of the cute Hello Panda 
       enjoying various sports and boating. Look for all 24 drawings.",
       category: 'chocolates',
-      code: 12313
+      code: 12313,
+      picture: File.open('app/assets/images/seeds/panda.jpg')
     },
     {
       name: 'Pretz',
@@ -35,7 +37,8 @@
       are also made by Glico, presumably in the exact same 
       long-skinny-cylindrical biscuit factory.",
       category: 'biscuits',
-      code: 12314
+      code: 12314,
+      picture: File.open('app/assets/images/seeds/pretz.jpg')
     },
     {
       name: 'Black Black Gum',
@@ -43,7 +46,8 @@
       that's designed to give you a lift and wake you up, this 
       popular gum is loaded with caffeine. ",
       category: 'gum',
-      code: 12315
+      code: 12315,
+      picture: File.open('app/assets/images/seeds/black_black_gum.jpg')
     }
 
   ])
