@@ -1,9 +1,14 @@
 // create new item elements
 var $snacks = $('<%= escape_javascript render(partial: "snack", collection: @snacks) %>');
 // append items to grid
-$('.snacks').append( $snacks )
+var $grid = $('.snacks').append( $snacks )
   // add and lay out newly appended items
   .masonry( 'appended', $snacks );
+
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});  
 
 <% if @snacks.next_page %>
   $('.pagination').replaceWith('<%= escape_javascript will_paginate(@snacks) %>');
