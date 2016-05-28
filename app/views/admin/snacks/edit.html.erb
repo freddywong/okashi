@@ -1,12 +1,11 @@
 <div class="row padding-top-50">
   <div class="col s6 offset-s3">
-    <h3 class="center">New Snack</h3>
-    <%= form_for @snack, url: { action: "create" } do |f| %>
+    <h3 class="center">Edit Snack</h3>
+    <%= form_for @snack, url: { action: "update" } do |f| %>    
       <%= render partial: "form", locals: {snack: @snack, f: f} %>
       <div class="actions center">
         <%= f.submit "Update Snack", class: 'waves-effect waves-light btn-large' %>
       </div>
-    <% end %>      
+    <% end %>
   </div>
 </div>
-
