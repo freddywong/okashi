@@ -1,4 +1,10 @@
-$('.snacks').append('<%= escape_javascript render(partial: "snack", collection: @snacks) %>');
+// create new item elements
+var $snacks = $('<%= escape_javascript render(partial: "snack", collection: @snacks) %>');
+// append items to grid
+$('.snacks').append( $snacks )
+  // add and lay out newly appended items
+  .masonry( 'appended', $snacks );
+
 <% if @snacks.next_page %>
   $('.pagination').replaceWith('<%= escape_javascript will_paginate(@snacks) %>');
 <% else %>
